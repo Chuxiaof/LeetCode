@@ -1,5 +1,8 @@
-# LeetCode
-Learning Journal
+# LeetCode Learning Journal
+
+## Reference
+- [Coding Interview University](https://github.com/jwasham/coding-interview-university)
+- [Huahua’s Tech Road](https://zxi.mytechroad.com/blog) 
 
 ##  Algorithmic complexity / Big-O / Asymptotic analysis
 - [x] [Harvard CS50 - Asymptotic Notation (video)](https://www.youtube.com/watch?v=iOq5kSKqeR4)
