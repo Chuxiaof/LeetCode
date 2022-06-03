@@ -1,0 +1,2 @@
+# LeetCode
+Learning Journal
