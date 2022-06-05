@@ -65,10 +65,9 @@
         - dequeue() - returns value and removes least recently added element (front)
         - empty()
       - [ ] LeetCode: 
-        - [ ] Q1424
-        - [ ] Q1038
+        - [x] Q1424
+        - [ ] Q1438
         - [ ] Q1499
-        - [ ] Q1063
         - [ ] Q1696
         
 
