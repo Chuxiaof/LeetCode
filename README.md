@@ -54,7 +54,7 @@
         - [x] Q496
         - [x] Q1019
         - [x] Q1063
-        - [ ] Q907
+        - [x] Q907
         - [ ] Q2104
 
 - ### Queue
@@ -64,6 +64,14 @@
         - enqueue(value) - adds value at position at tail
         - dequeue() - returns value and removes least recently added element (front)
         - empty()
+      - [ ] LeetCode: 
+        - [ ] Q1424
+        - [ ] Q1038
+        - [ ] Q1499
+        - [ ] Q1063
+        - [ ] Q1696
+        
+
 
 - ### Hash table
     - [ ] Videos:
