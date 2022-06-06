@@ -115,8 +115,16 @@
         - binary search (on sorted array of integers)
         - binary search using recursion
     - [ ] LeetCode
-        -
-
+        "As for the question "When can we use binary search?", my answer is that, If we can discover some kind of monotonicity, for example, if condition(k) is True then condition(k + 1) is True, then we can consider binary search."
+        - [x] Q278
+        - [x] Q69
+        - [x] Q35
+        - [ ] Q1011
+        - [ ] Q875
+        - [ ] Q1482
+        - [ ] Q1201
+        - [ ] Q1283
+ 
 - ### Bitwise operations
     - [ ] [Bits cheat sheet](https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/bits-cheat-sheet.pdf) - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32)
     - [ ] Get a really good understanding of manipulating bits with: &, |, ^, ~, >>, <<
