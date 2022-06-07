@@ -115,7 +115,7 @@
         - binary search (on sorted array of integers)
         - binary search using recursion
     - [ ] LeetCode
-        "As for the question "When can we use binary search?", my answer is that, If we can discover some kind of monotonicity, for example, if condition(k) is True then condition(k + 1) is True, then we can consider binary search."
+        - "As for the question "When can we use binary search?", my answer is that, If we can discover some kind of monotonicity, for example, if condition(k) is True then condition(k + 1) is True, then we can consider binary search."
         - [x] Q278
         - [x] Q69
         - [x] Q35
