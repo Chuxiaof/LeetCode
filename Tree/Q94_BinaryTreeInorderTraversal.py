@@ -15,16 +15,13 @@ class Solution:
 
     # iterative
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        ans, stack = [], []
-
-        while(root or stack):
-            while root:
-                stack.append(root)
-                root = root.left
-            root = stack.pop()
-            ans.append(root.val)
-            root=root.right
-
-        return ans
+        ans, stack = [], [root]
+        while stack:
+            node = stack.pop()
+            if node:
+                ans.append(node.val)
+                stack.append(node.left)
+                stack.append(node.right)
+        return ans[::-1]
 
             
