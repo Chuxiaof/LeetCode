@@ -178,6 +178,13 @@
             - inorder (DFS: left, self, right)
             - postorder (DFS: left, right, self)
             - preorder (DFS: self, left, right)
+    -LeetCode
+        - [x] Q94
+        - [ ] Q16
+        - [ ] Q21
+        - [ ] Q23
+        - [ ] Q25
+        - [ ] Q27
 
 - ### Binary search trees: BSTs
     - [x] [Binary Search Tree Review (video)](https://www.youtube.com/watch?v=x6At0nzX92o&index=1&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)    
