@@ -1,5 +1,4 @@
 class Solution:
-
     # recursive O(n)
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         ans = []
