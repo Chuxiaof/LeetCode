@@ -23,7 +23,6 @@ class Solution:
             self.helper(root.right, new.left)
 
     # sol2
-
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         self.helper(root)
         return root
