@@ -5,6 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    # sol1:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if not root:
             return None
@@ -20,3 +21,17 @@ class Solution:
                 new.left = TreeNode(root.right.val)
             self.helper(root.left, new.right)
             self.helper(root.right, new.left)
+
+    # sol2
+
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        self.helper(root)
+        return root
+
+    def helper(self, root):
+        if root:
+            left = self.invertTree(root.left)
+            right = self.invertTree(root.right)
+
+            root.left = right
+            root.right = left
