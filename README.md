@@ -182,9 +182,11 @@
         - [x] Q94
         - [x] Q100
         - [x] Q101
+        - [x] Q102
         - [x] Q144
         - [x] Q145
         - [x] Q226
+        
 
 - ### Binary search trees: BSTs
     - [x] [Binary Search Tree Review (video)](https://www.youtube.com/watch?v=x6At0nzX92o&index=1&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)    
