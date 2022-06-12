@@ -223,6 +223,7 @@
         - [x] Q98
         - [x] Q700
         - [x] Q230
+        - [x] Q99
 
 - ### Heap / Priority Queue / Binary Heap
     - visualized as a tree, but is usually linear in storage (array, linked list)
