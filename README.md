@@ -178,7 +178,7 @@
             - inorder (DFS: left, self, right)
             - postorder (DFS: left, right, self)
             - preorder (DFS: self, left, right)
-    -LeetCode
+    - LeetCode
         - [x] Q94
         - [x] Q100
         - [x] Q101
@@ -219,6 +219,8 @@
         - [ ] is_binary_search_tree
         - [ ] delete_value
         - [ ] get_successor // returns next-highest value in tree after given value, -1 if none
+    - LeetCode
+        - [x] Q98
 
 - ### Heap / Priority Queue / Binary Heap
     - visualized as a tree, but is usually linear in storage (array, linked list)
