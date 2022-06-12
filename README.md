@@ -221,6 +221,8 @@
         - [ ] get_successor // returns next-highest value in tree after given value, -1 if none
     - LeetCode
         - [x] Q98
+        - [x] Q700
+        - [x] Q230
 
 - ### Heap / Priority Queue / Binary Heap
     - visualized as a tree, but is usually linear in storage (array, linked list)
