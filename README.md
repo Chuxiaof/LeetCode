@@ -186,6 +186,10 @@
         - [x] Q144
         - [x] Q145
         - [x] Q226
+        - [x] Q572
+        - [x] Q589
+        - [x] Q617
+        - [x] Q669
         
 
 - ### Binary search trees: BSTs
