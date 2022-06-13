@@ -254,14 +254,14 @@
         - [ ] heapify - create a heap from an array of elements, needed for heap_sort
         - [ ] heap_sort() - take an unsorted array and turn it into a sorted array in-place using a max heap or min heap
 
-    - LeetCode
-        """
-        heapq
-        ------
-        - heapq.heapify(x:list) -> min-heap
-        - heapq.heappush(heap, item)
-        - heapq.heappop(heap)
-        """
+    - LeetCode  
+        """  
+        heapq  
+        ------  
+        - heapq.heapify(x:list) -> min-heap  
+        - heapq.heappush(heap, item)  
+        - heapq.heappop(heap)  
+        """\  
         - [x] Q1046
         - [x] Q1057
         - [ ] Q1642
