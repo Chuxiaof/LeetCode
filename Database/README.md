@@ -128,3 +128,28 @@
             CHANGE COLUMN Col_name1 Col_name2 INT DEFAULT 0;
             ```
 
+        - Remove DEFAULT Constraints
+            ```
+            ALTER TABLE table_name
+            ALTER COLUMN Col_name DROP DEFAULT;
+            ```
+
+
+    - NOT NULL Constraints
+        - e.g,
+        ```
+        col_name INT NUT NULL
+        ```
+        - Add DEFAULT Constraints
+            ```
+            ALTER TABLE table_name
+            CHANGE COLUMN Col_name1 Col_name2 VARCHAR(255) NOT NULL;
+            ```
+
+        - Remove DEFAULT Constraints
+            ```
+            ALTER TABLE table_name
+            MODIFY Col_name VARCHAR(255) NULL;
+            ```
+
+        - MODIFY COLUMN This command does everything CHANGE COLUMN can, but without renaming the column.
