@@ -53,7 +53,7 @@
 
 ### Creating a table
 -   ```
-    DREATE TABLE table_name 
+    CREATE TABLE table_name 
     (
         column_1 data_type constraints,
         column_2 data_type constraints,
@@ -95,16 +95,36 @@
     - Remove FOREIGN KEY Constraints
         ```
         ALTER TABLE table_name
-        DROP FOREIGN KEY foreign_key_name
+        DROP FOREIGN KEY foreign_key_name;
         ```
     
 
-- UNIQUE KEY Constraints
-    ```
-    
-    ```
+    - UNIQUE KEY Constraints
+        ```
+        UNIQUE KEY (column_name)
+        ```
 
+        - Add FOREIGN KEY Constraints
+            ```
+            ALTER TABLE table_name
+            ADD UNIQUE KEY (column_name1);
+            ```
 
+        - Remove UNIQUE KEY Constraints
+            ```
+            ALTER TABLE table_name
+            DROP INDEX unique_key_field;
+            ```
 
-
+    - DEFAULT Constraints
+        - e.g,
+            ```
+            col_name INT DEFAULT 0
+            ```
+        
+        - Add DEFAULT Constraints
+            ```
+            ALTER TABLE table_name
+            CHANGE COLUMN Col_name1 Col_name2 INT DEFAULT 0;
+            ```
 
