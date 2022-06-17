@@ -42,7 +42,14 @@
     - variable character: VARCHAR, eg., VARCHAR(5)
     - enumerate: ENUM
 - Numeric
+    - interger: INTEGER = INT, "signed" by default eg., INTEGER(8)
+    - fixed-point: DECIMAL = NUMERIC, eg., DECIMAL(5, 3) 10.768
+    - floating-point: FLOAT, eg., FLOAT(7, 2) 10374.07
+
 - Date and Time
+    - DATE: YYYY-MM-DD e.g., 2018-07-25
+    - DATETIME: YYYY-MM-DD HH:MM:SS[.fraction], 0-23:59:59.999999, e.g., 2018-07-25 09:30:00
+    - TIMESTAMP: number of seconds after 1st Jan 1970 00:00:00
 
 ### Creating a table
 -   ```
@@ -55,5 +62,49 @@
     );
     ```
     - compulsory requirement: sdd at least one columm
+
+
+### Delete a table
+
+-   ```
+    DROP TABLE table_name;
+    ```
+
+### MySQL Constraints
+
+- PRIMARY KEY Constraints
+    ```
+    PRIMARY KEY (column_name)
+    ```
+
+- FOREIGN KEY Constraints
+    ```
+    FOREIGN KEY (column_name1) REFERENCES child_table_name(column_name2) ON DELETE CASCADE
+    ```
+    - parent table = referenced table
+    - child table = referencing table
+    - CASCADE means want a certain phenomenon toaffect dependent objects together at the same time
+    - ON DELETE CASCADE means if a specific value from the parent table's primary key has been deleted, all the records from the child table referring to this value will be removed as well
+    
+    - Add FOREIGN KEY Constraints
+        ```
+        ALTER TABLE table_name
+        ADD FOREIGN KEY (column_name1) REFERENCES customers(column_name2) ON DELETE CASCADE;
+        ```
+
+    - Remove FOREIGN KEY Constraints
+        ```
+        ALTER TABLE table_name
+        DROP FOREIGN KEY foreign_key_name
+        ```
+    
+
+- UNIQUE KEY Constraints
+    ```
+    
+    ```
+
+
+
 
 
