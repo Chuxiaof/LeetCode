@@ -153,3 +153,42 @@
             ```
 
         - MODIFY COLUMN This command does everything CHANGE COLUMN can, but without renaming the column.
+
+### SQL SELECT Statement
+    ```
+    SELECT
+    FROM
+    WHERE
+    GROUP BY
+    HAVING
+    ORDER BY
+    LIMIT
+    ```
+
+
+### SQL INSERT Statement
+- Inserting data into existing table
+    ```
+    INSERT INTO table_name 
+    (col_1, 
+     col_2, 
+     ..., 
+     col_n)
+    VALUES
+    (val_1, 
+     val_2,
+     ...,
+     val_n)
+    ```
+
+- Inserting data into new table: INSERT INTO SELECT
+    ```
+    INSERT INTO table_2 
+    (col_1, 
+     col_2, 
+     ..., 
+     col_n)
+    SELECT col_1, col_2, ..., COL_N
+    DFROM table1
+    WHERE condition;
+    ```
