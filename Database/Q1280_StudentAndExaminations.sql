@@ -1,8 +1,9 @@
 # Write your MySQL query statement below
-SELECT student.student_id,student.student_name,subject.subject_name,COUNT(exam.subject_name) as attended_exams
-FROM Students as student
-JOIN Subjects as subject
-LEFT JOIN Examinations as exam
-ON student.student_id=exam.student_id AND subject.subject_name=exam.subject_name
-GROUP BY student.student_id,subject.subject_name
-ORDER BY student_id,subject_name;
+SELECT a.student_id, a.student_name, b.subject_name, COUNT(c.subject_name) AS attended_exams
+FROM Students a 
+JOIN Subjects b
+LEFT JOIN Examinations c
+ON a.student_id = c.student_id
+AND b.subject_name = c.subject_name
+GROUP BY a.student_id, b.subject_name
+ORDER BY a.student_id, b.subject_name

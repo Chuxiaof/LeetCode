@@ -203,3 +203,9 @@
 
 
 ### SQL DELETE Statement
+
+
+
+### SQL JOINs
+- INNER JOIN
+    - Null values, or values appering in just one of the two tables and not appearing in the other, are not idsplayed
