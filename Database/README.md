@@ -209,3 +209,15 @@
 ### SQL JOINs
 - INNER JOIN
     - Null values, or values appering in just one of the two tables and not appearing in the other, are not idsplayed
+
+- LEFT JOIN
+- CROSS JOIN 
+    - Cartesian product
+
+
+
+### 
+    ```
+    LOWER(TRIM(product_name)) AS product_name, 
+    DATE_FORMAT(sale_date, "%Y-%m") AS sale_date
+    ```
