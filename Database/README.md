@@ -216,8 +216,10 @@
 
 
 
-### 
+### Notes
     ```
+    GROUP_CONCAT(DISTINCT product ORDER BY product SEPARATOR ',') AS product
     LOWER(TRIM(product_name)) AS product_name, 
     DATE_FORMAT(sale_date, "%Y-%m") AS sale_date
+    LEFT(string, number_of_chars)
     ```
