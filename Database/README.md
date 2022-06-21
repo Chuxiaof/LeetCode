@@ -222,4 +222,9 @@
     LOWER(TRIM(product_name)) AS product_name, 
     DATE_FORMAT(sale_date, "%Y-%m") AS sale_date
     LEFT(string, number_of_chars)
+
+    DATEDIFF(year, '2017/08/25', '2011/08/25') AS DateDiff;
+    CONCAT(UPPER(SUBSTR(name,1,1)),LOWER(SUBSTR(name,2))) AS name
+    CHAR_LENGTH(content) > 15; # returns the length of the string measured in characters.
+    LENGTH() # returns the length of the string measured in bytes. 
     ```
