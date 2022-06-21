@@ -227,4 +227,8 @@
     CONCAT(UPPER(SUBSTR(name,1,1)),LOWER(SUBSTR(name,2))) AS name
     CHAR_LENGTH(content) > 15; # returns the length of the string measured in characters.
     LENGTH() # returns the length of the string measured in bytes. 
+
+    SELECT column_name(s) FROM table1
+    UNION
+    SELECT column_name(s) FROM table2;
     ```
