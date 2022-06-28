@@ -1,23 +1,22 @@
 class Solution:
     def sortIntegers(self, s):
-        if not s: 
+        if not s:
             return
 
         temp = [0] * len(s)
         self.mergeSort(temp, 0, len(s) - 1)
-        
 
     def mergeSort(self, s, start, end, temp):
         if start >= end:
-           return
-        mid = left + (right - left) / 2
+            return
+        mid = start + (end - start) // 2
 
         self.mergeSort(s, start, mid, temp)
         self.mergeSort(s, mid, end, temp)
         self.merge(s, start, end, temp)
 
     def merge(self, s, start, end, temp):
-        mid = start + (end - start) / 2
+        mid = start + (end - start) // 2
         leftStart = start
         rightStart = mid + 1
         index = leftStart
@@ -33,6 +32,15 @@ class Solution:
                 index += 1
                 rightStart += 1
 
+            while(leftStart <= mid):
+                temp[index] = s[leftStart]
+                index += 1
+                leftStart += 1
 
+            while(rightStart <= end):
+                temp[index] = temp[rightStart]
+                index += 1
+                rightStart += 1
 
-
+            for i in range(start, end+1):
+                s[i] = temp[i]
