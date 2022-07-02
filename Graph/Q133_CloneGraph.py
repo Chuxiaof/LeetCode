@@ -42,4 +42,20 @@ class Solution:
             for neighbor in node.neighbors:
                 new_neighbor = mappings[neighbor]
                 new_node.neighbors.append(new_neighbor)
+
+
+    # simple BFS template for finding all nodes 
+    queue = collections.deque([node])
+    distances = {node : 0}
+    while queue:
+        curr_node = queue.popleft()
+        for neighbor in curr_node.neighbors:
+            if neighbor in distances:
+                continue
+            queue.append(neighbor)
+            distances[neighbor] = distances[curr_node] + 1
+            
+
+
+
                 
